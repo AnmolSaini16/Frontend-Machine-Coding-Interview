@@ -1,6 +1,6 @@
 # Frontend Machine Coding
 
-Common machine coding round problems in React with accessible, component-based design.
+Common machine coding round problems in React with accessibility, keyboard navigation and component-based design.
 
 ## Demo
 
