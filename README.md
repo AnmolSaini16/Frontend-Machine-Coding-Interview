@@ -1,6 +1,6 @@
 # Frontend Machine Coding
 
-Accessible, framework-free UI components implemented in React for machine-coding interviews. The demo showcases: Snackbar, Modal, Pagination, Autocomplete, and Tabs — each built with a11y and keyboard support in mind.
+Common machine coding round problems solved in React with accessible, component-based design.
 
 ## Demo
 
