@@ -1,0 +1,49 @@
+:root {
+  --heigth: 32px;
+  --width: 32px;
+}
+
+.pagination {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pagination_button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  width: var(--width);
+  height: var(--heigth);
+  cursor: pointer;
+  transition: background-color ease 0.15s;
+}
+
+.pagination_button:hover {
+  background-color: whitesmoke;
+}
+
+.pagination_button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.pagination_button--outlined {
+  border: 1px solid #ccc;
+}
+
+.pagination_button--active,
+.pagination_button--active:hover {
+  background-color: #ccc;
+}
+
+.ellipsis {
+  width: var(--width);
+  height: var(--heigth);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}

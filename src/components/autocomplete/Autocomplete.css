@@ -1,0 +1,79 @@
+.ac-root {
+  position: relative;
+}
+
+.ac-inputWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: #fff;
+}
+
+.ac-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 4px;
+}
+
+.ac-clearBtn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: grey;
+  padding: 2px 4px;
+}
+
+.ac-clearBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ac-listbox {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 220px;
+  overflow: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.088);
+}
+
+.ac-option {
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.ac-option:hover {
+  background: whitesmoke;
+}
+
+.ac-option--active {
+  background: #f0f7ff;
+  outline: 1px solid #cfe3ff;
+}
+
+.ac-option--selected {
+  font-weight: 600;
+  background-color: whitesmoke;
+}
+
+.ac-empty,
+.ac-empty:hover {
+  cursor: default;
+  color: #777;
+  background-color: transparent;
+}

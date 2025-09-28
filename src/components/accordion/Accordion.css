@@ -1,0 +1,45 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+   border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+    padding: 8px;
+}
+
+
+.accordion-button--open {
+    padding: 16px 8px;
+}
+
+.accordion-button:hover {
+    background-color: whitesmoke;
+}
+
+.accordion-icon {
+    transition: all 0.2s;
+}
+
+.accordion-icon--open {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 0 8px;
+    padding-bottom: 16px;
+}
+
+
+
