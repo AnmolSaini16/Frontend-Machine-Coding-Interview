@@ -7,7 +7,7 @@ Accessible, framework-free UI components implemented in React for machine-coding
 - Install and run locally:
 
 ```bash
-npm i # or  yarn
+npm i # or yarn
 npm run dev
 ```
 
