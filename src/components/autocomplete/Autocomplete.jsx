@@ -85,14 +85,12 @@ export default function AutoComplete({
     switch (e.key) {
       case "ArrowDown": {
         if (filteredOptions.length === 0) return;
-        e.preventDefault();
         setActiveIndex((i) => (i + 1) % filteredOptions.length);
         break;
       }
 
       case "ArrowUp": {
         if (filteredOptions.length === 0) return;
-        e.preventDefault();
         setActiveIndex(
           (i) => (i - 1 + filteredOptions.length) % filteredOptions.length
         );
@@ -100,7 +98,6 @@ export default function AutoComplete({
       }
       case "Enter": {
         if (open && activeIndex >= 0 && activeIndex < filteredOptions.length) {
-          e.preventDefault();
           onOptionClick(filteredOptions[activeIndex]);
         }
         break;

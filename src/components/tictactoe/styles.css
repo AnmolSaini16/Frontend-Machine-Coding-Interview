@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+}
+
+.board-container {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.board_cell {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: black;
+  font-size: 48px;
+  font-weight: bold;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.board_cell:hover {
+  background-color: whitesmoke;
+}
+
+.board_cell:disabled {
+  cursor: default;
+  background-color: transparent;
+}
+
+.winner {
+  color:forestgreen;
+  font-weight: bold;
+}
+
+.draw {
+  color:crimson;
+  font-weight: bold;
+}

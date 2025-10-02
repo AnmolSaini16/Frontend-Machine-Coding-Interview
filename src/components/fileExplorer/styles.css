@@ -1,0 +1,23 @@
+.file-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 16px;
+}
+
+.file-list-item-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 2px 6px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.file-list-item-button--isDir {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.file-list-item-button--isDir:hover {
+    background-color: whitesmoke;
+}
